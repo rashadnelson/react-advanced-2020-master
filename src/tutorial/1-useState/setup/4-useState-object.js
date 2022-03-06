@@ -2,20 +2,20 @@ import React, { useState } from 'react'
 
 const UseStateObject = () => {
 
-  const [ person, setPerson ] = useState({
-    name: "Rashad Nelson", 
-    age: 42, 
+  const [person, setPerson] = useState({
+    name: "Rashad Nelson",
+    age: 42,
     location: "Montclair, NJ"
   })
 
   const toggleLocation = () => {
-    if( person.location === "Montclair, NJ") {
+    if (person.location === "Newark, NJ") {
       setPerson({ ...person, location: "Atlanta, GA" })
     }
     else {
-      setPerson({ ...person, location: "Montclair, NJ"})
+      setPerson({ ...person, location: "Newark, NJ" })
     }
-    
+
   }
 
   return (
