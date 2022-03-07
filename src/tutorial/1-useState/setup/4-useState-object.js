@@ -10,7 +10,7 @@ const UseStateObject = () => {
 
   const toggleLocation = () => {
     if (person.location === "Newark, NJ") {
-      setPerson({ ...person, location: "Atlanta, GA" })
+      setPerson({ ...person, location: "Baltimore, MD" })
     }
     else {
       setPerson({ ...person, location: "Newark, NJ" })
